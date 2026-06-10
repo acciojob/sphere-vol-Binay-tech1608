@@ -8,7 +8,7 @@ function volume_sphere() {
 	}
 	else{
 	let Volume = 4/3 * Math.PI * Math.pow(r,3);
-	Volumedisplay.textContent = Volume.toFixed(2);
+	Volumedisplay.textContent = Volume.toFixed(4);
 	}
 } 
 
