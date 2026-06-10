@@ -6,9 +6,10 @@ function volume_sphere() {
 	if(isNan(r) || r < 0){
 		Volumedisplay.value = NaN;
 	}
-	// let volumeConstant = 4.1887902047863905;
+	else{
 	let Volume = 4/3 * Math.PI * Math.pow(r,3);
 	Volumedisplay.textContent = Volume.toFixed(2);
+	}
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
